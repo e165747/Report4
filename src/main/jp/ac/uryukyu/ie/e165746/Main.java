@@ -1,7 +1,7 @@
-package jp.ac.uryukyu.ie.e165747;
+package jp.ac.uryukyu.ie.e165746;
 
 /**
- * Created by e165747 on 2016/11/15.
+ * Created by e165747 on 2016/11/17.
  */
 public class Main {
     public static void main(String[] args){
