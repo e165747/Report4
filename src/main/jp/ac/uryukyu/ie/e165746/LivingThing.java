@@ -20,7 +20,7 @@ public class LivingThing {
 
     public String getName(){ return name;}
 
-    public String setName(String name){this.name = name;}
+    public void setName(String name){this.name = name;}
 
     public void setHitPoint(int HitPoint){this.HitPoint = HitPoint;}
 
