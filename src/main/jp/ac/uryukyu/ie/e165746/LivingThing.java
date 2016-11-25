@@ -20,9 +20,15 @@ public class LivingThing {
 
     public String getName(){ return name;}
 
+    public String setName(String name){this.name = name;}
+
     public void setHitPoint(int HitPoint){this.HitPoint = HitPoint;}
 
     public int getHitPoint(){return HitPoint;}
+
+    public int getAttack(){return  attack;}
+
+    public void setAttack(int attack){this.attack = attack;}
 
     public void setDead(){this.dead = true;}
 
