@@ -4,14 +4,14 @@ package jp.ac.uryukyu.ie.e165746;
  * Created by e165747 on 2016/11/18.
  */
 public class LivingThing {
-    String name;
-    int hitPoint;
-    int attack;
-    boolean dead;
+    private String name;
+    private int HitPoint;
+    private int attack;
+    private boolean dead;
 
     public LivingThing(String name,int maximumHP,int attack){
         this.name = name;
-        this.hitPoint = maximumHP;
+        this.HitPoint = maximumHP;
         this.attack = attack;
         dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
@@ -19,6 +19,12 @@ public class LivingThing {
     public boolean isDead(){ return dead;}
 
     public String getName(){ return name;}
+
+    public void setHitPoint(int HitPoint){this.HitPoint = HitPoint;}
+
+    public int getHitPoint(){return HitPoint;}
+
+    public void setDead(){this.dead = true;}
 
     public void attack(LivingThing opponent) {
         if (!dead) {
@@ -28,8 +34,8 @@ public class LivingThing {
         }
     }
     public void wounded(int damage) {
-        hitPoint -= damage;
-        if (hitPoint < 0) {
+        HitPoint -= damage;
+        if (HitPoint < 0) {
             dead = true;
         }
     }
